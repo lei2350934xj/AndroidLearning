@@ -57,6 +57,10 @@
         <activity android:name=".ActivityCommunicate"></activity>
         <activity android:name=".ActivityCommunicateSub"></activity>
         <activity android:name=".DrawerLayoutDisplay"></activity>
+        <activity android:name=".ServiceView"></activity>
+
+        <!--    除了Activity以外 Service也必须在Manifest中注册才能使用    -->
+        <service android:name=".ServiceDisplay"></service>
     </application>
 
 </manifest>
