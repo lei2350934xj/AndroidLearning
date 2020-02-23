@@ -279,25 +279,30 @@
             android:orientation="horizontal"
             >
             <Button
-                android:id="@+id/btn_media_player"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="媒体" />
-            <Button
                 android:id="@+id/btn_activity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textAllCaps="false"
                 android:text="activity" />
+            <Button
+                android:id="@+id/btn_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:text="service" />
             <Button
                 android:id="@+id/btn_broadcast"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="广播" />
+                android:textAllCaps="false"
+                android:text="broadcast" />
             <Button
-                android:id="@+id/btn_menu"
+                android:id="@+id/btn_provider"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="菜单" />
+                android:textAllCaps="false"
+                android:text="provider" />
 
         </LinearLayout>
         <LinearLayout
@@ -316,13 +321,20 @@
                 android:textAllCaps="false"
                 android:text="activity通信" />
             <Button
-                android:id="@+id/btn_service"
+                android:id="@+id/btn_media_player"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAllCaps="false"
-                android:textSize="16sp"
-                android:text="服务" />
-
+                android:text="媒体" />
+            <Button
+                android:id="@+id/btn_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="菜单" />
+            <Button
+                android:id="@+id/btn_drawerLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="侧滑菜单" />
         </LinearLayout>
     </LinearLayout>
 

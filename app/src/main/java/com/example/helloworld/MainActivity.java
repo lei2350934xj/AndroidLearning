@@ -100,6 +100,9 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
 
         Button btn_activity_communicate = findViewById(R.id.btn_activity_communicate);
         btn_activity_communicate.setOnClickListener(this);
+
+        Button btn_drawerLayout = findViewById(R.id.btn_drawerLayout);
+        btn_drawerLayout.setOnClickListener(this);
     }
 
     public void onClick(View v) {
@@ -208,6 +211,10 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
             case R.id.btn_activity_communicate:
                 Intent intent_activity_communicate = new Intent(MainActivity.this, ActivityCommunicate.class);
                 startActivity(intent_activity_communicate);
+                break;
+            case R.id.btn_drawerLayout:
+                Intent intent_drawerLayout = new Intent(MainActivity.this, DrawerLayoutDisplay.class);
+                startActivity(intent_drawerLayout);
                 break;
         }
 
