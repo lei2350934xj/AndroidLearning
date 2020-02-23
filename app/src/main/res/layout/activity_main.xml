@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<!--    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical"-->
+<!--    tools:context=".MainActivity">-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="#E1FF9800"
+        android:text="Android Learning Demo"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_layout"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:background="#000000"
+        android:padding="10dp"
+        android:orientation="horizontal" >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#FF9800"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#FFC107"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="90dp"
+        android:background="#673AB7"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:id="@+id/ll_sub1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F44336"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/btn_ui_learning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UI布局学习" />
+
+            <Button
+                android:id="@+id/btn_ui_widget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UI控件学习" />
+            <Button
+                android:id="@+id/btn_custom_widget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自定义控件" />
+            <Button
+                android:id="@+id/btn_drag_drop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拖放演示" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_sub2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#E91E63"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/btn_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通知" />
+            <Button
+                android:id="@+id/btn_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="位置服务" />
+            <Button
+                android:id="@+id/btn_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电子邮件" />
+            <Button
+                android:id="@+id/btn_short_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="短信服务" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_sub3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F44336"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            >
+            <Button
+            android:id="@+id/btn_telephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打电话" />
+            <Button
+                android:id="@+id/btn_arrayadapter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ArrayAdapter" />
+            <Button
+                android:id="@+id/btn_progress_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ProgressDialog" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_sub4"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#E91E63"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/btn_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="下拉框Spinner" />
+            <Button
+                android:id="@+id/btn_alert_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="警告对话框" />
+            <Button
+                android:id="@+id/btn_animation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="动画" />
+            <Button
+                android:id="@+id/btn_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="音频" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_sub5"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F44336"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/btn_auto_complete_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AutoTView" />
+            <Button
+                android:id="@+id/btn_bluetooth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="蓝牙" />
+            <Button
+                android:id="@+id/btn_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="摄像头" />
+            <Button
+                android:id="@+id/btn_clipboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="剪切板" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_sub6"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#E91E63"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/btn_custom_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自定义字体" />
+            <Button
+                android:id="@+id/btn_gestures"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手势" />
+            <Button
+                android:id="@+id/btn_bitmap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="位图" />
+            <Button
+                android:id="@+id/btn_inner_storage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="内部存储" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_sub7"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F44336"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            >
+            <Button
+            android:id="@+id/btn_json"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JSON" />
+            <Button
+                android:id="@+id/btn_loading_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="Loading" />
+            <Button
+                android:id="@+id/btn_localization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="本地化" />
+            <Button
+                android:id="@+id/btn_login_display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="登录" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_sub8"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#E91E63"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/btn_media_player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="媒体" />
+            <Button
+                android:id="@+id/btn_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="activity" />
+            <Button
+                android:id="@+id/btn_broadcast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="广播" />
+            <Button
+                android:id="@+id/btn_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="菜单" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_sub9"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F44336"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/btn_activity_communicate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="activity通信" />
+            <Button
+                android:id="@+id/btn_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="服务" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+

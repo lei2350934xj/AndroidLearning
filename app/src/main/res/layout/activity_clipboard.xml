@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:text="Clipboard Demo"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_layout"
+        android:layout_width="400dp"
+        android:layout_height="600dp"
+        android:background="#4CAF50"
+        android:padding="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="19dp"
+            android:text="请输入要复制的内容"
+        />
+        <EditText
+            android:id="@+id/clipboard_editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_marginTop="20dp"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+        <Button
+            android:id="@+id/btn_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="copy_text"
+            android:text="复制文本"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="19dp"
+            android:text="显示你复制的内容"
+            />
+        <EditText
+            android:id="@+id/clipboard_editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_marginTop="20dp"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_paste"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="paste_text"
+            android:text="粘贴文本"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+

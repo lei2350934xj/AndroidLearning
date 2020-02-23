@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:text="Bitmap Demo"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_layout"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:background="#4CAF50"
+        android:padding="10dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/bitmap_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/ic_baozi" />
+        <Button
+            android:id="@+id/btn_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="gray"
+            android:text="gray"/>
+        <Button
+            android:id="@+id/btn_bright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="bright"
+            android:text="bright"/>
+        <Button
+            android:id="@+id/btn_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="dark"
+            android:text="dark"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+

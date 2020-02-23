@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E7D1D1"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FFC107">
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="24dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Drag Drop Demo"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/topContainer"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/ll_1"
+        android:background="#673AB7"
+        >
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="请输入发送的通知内容"
+            android:textAlignment="viewStart"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:id="@+id/notification_content"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textColor="#000"
+            android:background="#F3F3F3"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:layout_below="@+id/label"
+            android:inputType="text" />
+        <Button
+            android:id="@+id/btn_send_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notification_content"
+            android:layout_marginTop="5dp"
+            android:background="#3F51B5"
+            android:textColor="#000"
+            android:text="发送"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

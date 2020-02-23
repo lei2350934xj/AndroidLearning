@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:text="Bluetooth Demo"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_layout"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:background="#4CAF50"
+        android:padding="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_bluetooth_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="on"
+            android:text="打开蓝牙"/>
+        <Button
+            android:id="@+id/btn_bluetooth_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="off"
+            android:text="关闭蓝牙"/>
+        <Button
+            android:id="@+id/btn_bluetooth_visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="visible"
+            android:text="可见？"/>
+        <Button
+            android:id="@+id/btn_bluetooth_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="list"
+            android:text="显示连接列表"/>
+        <ListView
+            android:id="@+id/bluetooth_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible" >
+
+        </ListView>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

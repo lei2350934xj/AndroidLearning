@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FFC107">
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="24dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="TextView and EditView Demo"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="#673AB7"
+        android:layout_below="@id/ll_1">
+
+        <TextView
+            android:id="@+id/text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="36sp"
+            android:textStyle="bold|italic"
+            android:capitalize="characters"
+            android:text="TextView demo" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_3"
+        android:layout_below="@id/ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:background="#4CAF50"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:text="EditView Demo"
+            />
+        <EditText
+            android:id="@+id/edit1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text2"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:text="请输入内容"
+            android:inputType="text" />
+        <Button
+            android:id="@+id/btn_show_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text2"
+            android:layout_below="@+id/text2"
+            android:layout_marginTop="30dp"
+            android:text="展示输入框的内容" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_4"
+        android:layout_below="@id/ll_3"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:background="#009688"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/text_calculator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="计算2个数的和dp"/>
+        <EditText
+            android:id="@+id/edittext_num1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:background="#eee"
+            android:layout_below="@+id/text_calculator"
+            android:layout_alignLeft="@+id/text_calculator"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="请输入数1" />
+        <EditText
+            android:id="@+id/edittext_num2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:background="#eee"
+            android:layout_below="@+id/edittext_num1"
+            android:layout_alignLeft="@+id/text_calculator"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="请输入数2" />
+        <Button
+            android:id="@+id/btn_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edittext_num2"
+            android:layout_alignLeft="@+id/edittext_num1"
+            android:layout_marginTop="5dp"
+            android:text="点击求和"/>
+        <EditText
+            android:id="@+id/edittext_result"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:background="#eee"
+            android:layout_below="@id/btn_sum"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:text="结果" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_5"
+        android:layout_below="@id/ll_4"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:background="#efefef"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="这是一个安卓图片"
+            android:src="@drawable/ic_launcher_foreground" />
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find?" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="30dp" >
+
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="网站1" />
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="网站2" />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="网站3" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

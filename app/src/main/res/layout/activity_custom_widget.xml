@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/custom_widget_ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FFC107">
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="24dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Custom Widget Demo"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/custom_widget_ll_2"
+        android:layout_below="@id/custom_widget_ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:background="#efefef"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+        <!--    这里使用自定义的部件 CustomDateView 注意引入的时候必须带包名    -->
+        <com.example.helloworld.CustomDateView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#673AB7"
+            android:textSize="36sp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
+

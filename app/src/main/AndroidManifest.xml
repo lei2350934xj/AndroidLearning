@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.helloworld">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Demo"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UiLearning"></activity>
+        <activity android:name=".UiWidget"></activity>
+        <activity android:name=".CustomWidget"></activity>
+        <activity android:name=".DragDrop"></activity>
+        <activity android:name=".Notification"></activity>
+        <activity android:name=".NotificationView"></activity>
+        <activity android:name=".ArrAdapter"></activity>
+        <activity android:name=".ProDialog"></activity>
+        <activity android:name=".SpinnerDisplay"></activity>
+        <activity android:name=".AlertdiaLog"></activity>
+        <activity android:name=".MyAnimation"></activity>
+        <activity android:name=".AudioDisplay"></activity>
+        <activity android:name=".AutoTextView"></activity>
+        <activity android:name=".BluetoothDisplay"></activity>
+        <activity android:name=".ClipboardDisplay"></activity>
+        <activity android:name=".GesturesDisplay"></activity>
+        <activity android:name=".BitmapDisplay"></activity>
+        <activity android:name=".InnerStorage"></activity>
+        <activity android:name=".JsonDisplay"></activity>
+        <activity android:name=".LoadingSpinnerDisplay"></activity>
+        <activity android:name=".LocalizationDisplay"></activity>
+        <activity android:name=".LoginDisplay"></activity>
+        <activity android:name=".MediaPlayerDisplay"></activity>
+        <activity android:name=".ActivityDisplay"></activity>
+        <activity android:name=".MenuDisplay"></activity>
+        <activity android:name=".ActivityCommunicate"></activity>
+        <activity android:name=".ActivityCommunicateSub"></activity>
+    </application>
+
+</manifest>

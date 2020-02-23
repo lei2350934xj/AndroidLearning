@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:text="Activity通信 Demo"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_layout"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:background="#4CAF50"
+        android:padding="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="您的名字:"
+            android:textSize="18sp"
+            android:gravity="center"
+            />
+        <EditText
+            android:id="@+id/activity_communicate_content"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:textSize="24sp"
+            android:layout_marginLeft="20dp"
+            >
+            <requestFocus />
+        </EditText>
+        <Button
+            android:id="@+id/btn_activity_communicate_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:onClick="activity_communicate_submit"
+            android:text="登录"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
