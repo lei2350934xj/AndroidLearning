@@ -12,6 +12,7 @@ public class ServiceDisplay extends Service {
 
     private final String TAG = "TestService";
 
+    // 该方法是Service都必须实现的方法，该方法会返回一个 IBinder对象，app通过该对象与Service组件进行通信
     @Override
     public IBinder onBind(Intent intent) {
         return null;

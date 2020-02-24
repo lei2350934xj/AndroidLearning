@@ -21,6 +21,12 @@ public class ActivityCommunicateSub extends Activity {
          */
         Intent data = getIntent();
         String name = data.getStringExtra("name");
-        activity_communicate_sub_label.setText(name);
+        // 不过拿之前要判断下是否为null哦
+        if(name != null){
+            activity_communicate_sub_label.setText(name);
+        }else{
+            name = "默认值";
+            activity_communicate_sub_label.setText(name);
+        }
     }
 }

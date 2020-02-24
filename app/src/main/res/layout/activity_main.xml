@@ -321,6 +321,23 @@
                 android:textAllCaps="false"
                 android:text="activity通信" />
             <Button
+                android:id="@+id/btn_intent_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="Intentservice" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_sub10"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#E91E63"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            >
+            <Button
                 android:id="@+id/btn_media_player"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -335,6 +352,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="侧滑菜单" />
+
         </LinearLayout>
     </LinearLayout>
 
