@@ -14,6 +14,8 @@
     <uses-permission android:name="android.permission.BLUETOOTH"/>
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
     <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
 
     <application
         android:allowBackup="true"
@@ -59,10 +61,23 @@
         <activity android:name=".DrawerLayoutDisplay"></activity>
         <activity android:name=".ServiceView"></activity>
         <activity android:name=".IntentServiceView"></activity>
+        <activity android:name=".BroadcastDisplay"></activity>
 
         <!--    除了Activity以外 Service也必须在Manifest中注册才能使用    -->
         <service android:name=".ServiceDisplay"></service>
         <service android:name=".IntentServiceDisplay"></service>
+
+        <!--   注册广播的接收器 静态注册    -->
+        <receiver android:name=".BootCompleteReceiver">
+            <intent-filter>
+                <action android:name = "android.intent.cation.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".MyBroadcastReceiver">
+            <intent-filter>
+                <action android:name="MY_CUSTOM_BROADCAST"/>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

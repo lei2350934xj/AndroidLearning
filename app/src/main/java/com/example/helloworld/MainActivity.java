@@ -109,6 +109,9 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
 
         Button btn_intent_service = findViewById(R.id.btn_intent_service);
         btn_intent_service.setOnClickListener(this);
+
+        Button btn_intent_broadcast = findViewById(R.id.btn_broadcast);
+        btn_intent_broadcast.setOnClickListener(this);
     }
 
     public void onClick(View v) {
@@ -229,6 +232,10 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
             case R.id.btn_intent_service:
                 Intent intent_intent_service = new Intent(MainActivity.this, IntentServiceView.class);
                 startActivity(intent_intent_service);
+                break;
+            case R.id.btn_broadcast:
+                Intent intent_broadcast = new Intent(MainActivity.this, BroadcastDisplay.class);
+                startActivity(intent_broadcast);
                 break;
         }
 
