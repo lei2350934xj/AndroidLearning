@@ -17,11 +17,11 @@
 
     <LinearLayout
         android:id="@+id/ll_layout"
-        android:layout_width="400dp"
+        android:layout_width="match_parent"
         android:layout_height="300dp"
         android:background="#4CAF50"
-        android:padding="10dp"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:padding="10dp">
 
         <ImageView
             android:id="@+id/imageView1"
@@ -32,21 +32,24 @@
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
             android:src="@mipmap/ic_baozi" />
+
         <Button
             android:id="@+id/rotate360"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="旋转"/>
+            android:text="旋转" />
+
         <Button
             android:id="@+id/zoomInOut"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="缩放"/>
+            android:text="缩放" />
+
         <Button
             android:id="@+id/fadeInOut"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="淡入淡出"/>
+            android:text="淡入淡出" />
 
     </LinearLayout>
 

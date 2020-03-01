@@ -118,6 +118,9 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
 
         Button btn_intent_fragment = findViewById(R.id.btn_fragment);
         btn_intent_fragment.setOnClickListener(this);
+
+        Button btn_intent_fragment_dynamic = findViewById(R.id.btn_fragment_dynamic);
+        btn_intent_fragment_dynamic.setOnClickListener(this);
     }
 
     public void onClick(View v) {
@@ -252,6 +255,10 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
             case R.id.btn_fragment:
                 Intent intent_fragment = new Intent(MainActivity.this, FragmentDisplay.class);
                 startActivity(intent_fragment);
+                break;
+            case R.id.btn_fragment_dynamic:
+                Intent intent_fragment_dynamic = new Intent(MainActivity.this, DynamicFragment.class);
+                startActivity(intent_fragment_dynamic);
                 break;
         }
 
