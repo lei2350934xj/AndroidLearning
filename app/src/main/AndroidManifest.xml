@@ -15,6 +15,9 @@
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
     <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_PROFILE"/>
 
 
     <application
@@ -62,6 +65,7 @@
         <activity android:name=".ServiceView"></activity>
         <activity android:name=".IntentServiceView"></activity>
         <activity android:name=".BroadcastDisplay"></activity>
+        <activity android:name=".ProviderDisplay"></activity>
 
         <!--    除了Activity以外 Service也必须在Manifest中注册才能使用    -->
         <service android:name=".ServiceDisplay"></service>

@@ -112,6 +112,9 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
 
         Button btn_intent_broadcast = findViewById(R.id.btn_broadcast);
         btn_intent_broadcast.setOnClickListener(this);
+
+        Button btn_intent_provider = findViewById(R.id.btn_provider);
+        btn_intent_provider.setOnClickListener(this);
     }
 
     public void onClick(View v) {
@@ -236,6 +239,10 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
             case R.id.btn_broadcast:
                 Intent intent_broadcast = new Intent(MainActivity.this, BroadcastDisplay.class);
                 startActivity(intent_broadcast);
+                break;
+            case R.id.btn_provider:
+                Intent intent_provider = new Intent(MainActivity.this, ProviderDisplay.class);
+                startActivity(intent_provider);
                 break;
         }
 
