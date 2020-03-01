@@ -115,6 +115,9 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
 
         Button btn_intent_provider = findViewById(R.id.btn_provider);
         btn_intent_provider.setOnClickListener(this);
+
+        Button btn_intent_fragment = findViewById(R.id.btn_fragment);
+        btn_intent_fragment.setOnClickListener(this);
     }
 
     public void onClick(View v) {
@@ -122,6 +125,8 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
             case R.id.btn_ui_learning :
                 /**
                  *  从另一个 Activity 中启动某个 Activity
+                 *  参数一：包名
+                 *  参数二：类名 ==》从而限定要启动哪个activity
                  */
                 Intent intent_ui_learning = new Intent(MainActivity.this, UiLearning.class);
                 startActivity(intent_ui_learning);
@@ -243,6 +248,10 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
             case R.id.btn_provider:
                 Intent intent_provider = new Intent(MainActivity.this, ProviderDisplay.class);
                 startActivity(intent_provider);
+                break;
+            case R.id.btn_fragment:
+                Intent intent_fragment = new Intent(MainActivity.this, FragmentDisplay.class);
+                startActivity(intent_fragment);
                 break;
         }
 
