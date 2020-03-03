@@ -68,6 +68,7 @@
         <activity android:name=".ProviderDisplay"></activity>
         <activity android:name=".FragmentDisplay"></activity>
         <activity android:name=".DynamicFragment"></activity>
+        <activity android:name=".MySdk"></activity>
 
         <!--    除了Activity以外 Service也必须在Manifest中注册才能使用    -->
         <service android:name=".ServiceDisplay"></service>
