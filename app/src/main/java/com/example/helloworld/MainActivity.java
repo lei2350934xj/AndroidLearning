@@ -124,6 +124,9 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
 
         Button btn_intent_mysdk = findViewById(R.id.btn_mysdk);
         btn_intent_mysdk.setOnClickListener(this);
+
+        Button btn_intent_webview = findViewById(R.id.btn_webview);
+        btn_intent_webview.setOnClickListener(this);
     }
 
     public void onClick(View v) {
@@ -266,6 +269,10 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
             case R.id.btn_mysdk:
                 Intent intent_mysdk = new Intent(MainActivity.this, MySdk.class);
                 startActivity(intent_mysdk);
+                break;
+            case R.id.btn_webview:
+                Intent intent_webview = new Intent(MainActivity.this, WebviewDisplay.class);
+                startActivity(intent_webview);
                 break;
         }
 

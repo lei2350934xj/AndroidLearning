@@ -18,7 +18,8 @@
     <uses-permission android:name="android.permission.READ_CONTACTS"/>
     <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
     <uses-permission android:name="android.permission.WRITE_PROFILE"/>
-
+    <!-- 添加网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -69,6 +70,7 @@
         <activity android:name=".FragmentDisplay"></activity>
         <activity android:name=".DynamicFragment"></activity>
         <activity android:name=".MySdk"></activity>
+        <activity android:name=".WebviewDisplay"></activity>
 
         <!--    除了Activity以外 Service也必须在Manifest中注册才能使用    -->
         <service android:name=".ServiceDisplay"></service>
