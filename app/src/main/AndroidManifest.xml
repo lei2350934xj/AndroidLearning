@@ -71,6 +71,7 @@
         <activity android:name=".DynamicFragment"></activity>
         <activity android:name=".MySdk"></activity>
         <activity android:name=".WebviewDisplay"></activity>
+        <activity android:name=".WebviewJs"></activity>
 
         <!--    除了Activity以外 Service也必须在Manifest中注册才能使用    -->
         <service android:name=".ServiceDisplay"></service>
