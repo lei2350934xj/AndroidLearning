@@ -73,6 +73,7 @@
         <activity android:name=".WebviewDisplay"></activity>
         <activity android:name=".WebviewJs"></activity>
         <activity android:name=".SharePanel"></activity>
+        <activity android:name=".HttpRequestDisplay"></activity>
 
         <!--    除了Activity以外 Service也必须在Manifest中注册才能使用    -->
         <service android:name=".ServiceDisplay"></service>

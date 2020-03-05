@@ -133,6 +133,9 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
 
         Button btn_intent_share = findViewById(R.id.btn_share);
         btn_intent_share.setOnClickListener(this);
+
+        Button btn_intent_http_request_display = findViewById(R.id.btn_http_request_display);
+        btn_intent_http_request_display.setOnClickListener(this);
     }
 
     public void onClick(View v) {
@@ -287,6 +290,10 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
             case R.id.btn_share:
                 Intent intent_share = new Intent(MainActivity.this, SharePanel.class);
                 startActivity(intent_share);
+                break;
+            case R.id.btn_http_request_display:
+                Intent intent_http_request_display = new Intent(MainActivity.this, HttpRequestDisplay.class);
+                startActivity(intent_http_request_display);
                 break;
         }
 
